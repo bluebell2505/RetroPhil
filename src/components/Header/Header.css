@@ -1,0 +1,138 @@
+/* Header.css */
+.header {
+    width: 100%;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 50px;
+    }
+  
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info a,
+  .account-options a {
+    margin-right: 20px;
+    color: #262626;
+    text-decoration: none;
+  }
+  
+  .account-options a {
+    cursor: pointer;
+  }
+  
+  .account-options a:hover {
+    color: rgba(48, 0, 0, 0.368);
+  }
+  .logo {
+    position: absolute;
+    left: 45%;
+    top: -5%;
+  }
+  .logo img {
+    height: 170px;
+  }
+
+  .header-main {
+    padding-top: 20px;
+  }
+  
+  .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 40px;
+  }
+  
+  .nav-links a:hover {
+    color: rgba(48, 0, 0, 0.734);
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 110px;
+    left: 1%;
+    width: 98%;
+    background-color: #f9f9f9;
+    padding: 20px 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-content {
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+  }
+
+  .left-section img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .left-section h2 {
+    font-size: 24px;
+    margin: 15px 0;
+  }
+  
+  .left-section button {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .right-section {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .dropdown-category h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .dropdown-category a {
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dropdown-category a:hover {
+    color: #c69d5a;
+  }
+  
+  .dropdown-category {
+    width: 150px;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search input {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+  }
+  
+  .search button {
+    background-color: transparent;
+    border: none;
+    margin-left: -30px;
+    cursor: pointer;
+    color: #c69d5a;
+  }
+  
+  .search button:hover {
+    color: #000;
+  }
+  

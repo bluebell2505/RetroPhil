@@ -1,38 +1,38 @@
 [
   {
-    "name": "Aliva Priva Jardin",
-    "price": "47,043",
-    "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
-    "image": "./r1.png"
+    "name": "Stamp 1",
+    "price": "43",
+    "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "image": "https://cdn11.bigcommerce.com/s-9xwo1raw7u/images/stencil/1280x1280/products/61908/45471/USA-F1__04773.1711079939.jpg?c=1"
   },
   {
-    "name": "Asatti Garden City",
-    "price": "66,353",
-    "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
-    "image": "./r2.png"
+    "name": "Stamp 2",
+    "price": "53",
+    "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "image": "https://cdn11.bigcommerce.com/s-9xwo1raw7u/images/stencil/1280x1280/products/61908/45471/USA-F1__04773.1711079939.jpg?c=1"
   },
   {
-    "name": "Citralan Puri Serang",
-    "price": "35,853",
-    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
-    "image": "./r3.png"
+    "name": "Stamp 3",
+    "price": "53",
+    "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "image": "https://cdn11.bigcommerce.com/s-9xwo1raw7u/images/stencil/1280x1280/products/61908/45471/USA-F1__04773.1711079939.jpg?c=1"
   },
   {
-    "name": "Aliva Priva Jardin",
-    "price": "47,043",
-    "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
-    "image": "./r1.png"
+    "name": "Stamp 4",
+    "price": "43",
+    "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "image": "https://cdn11.bigcommerce.com/s-9xwo1raw7u/images/stencil/1280x1280/products/61908/45471/USA-F1__04773.1711079939.jpg?c=1"
   },
   {
-    "name": "Asatti Garden City",
-    "price": "66,353",
-    "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
-    "image": "./r2.png"
+    "name": "Stamp 5",
+    "price": "53",
+    "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "image": "https://cdn11.bigcommerce.com/s-9xwo1raw7u/images/stencil/1280x1280/products/61908/45471/USA-F1__04773.1711079939.jpg?c=1"
   },
   {
-    "name": "Citralan Puri Serang",
-    "price": "35,853",
-    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
-    "image": "./r3.png"
+    "name": "Stamp 6",
+    "price": "53",
+    "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "image": "https://cdn11.bigcommerce.com/s-9xwo1raw7u/images/stencil/1280x1280/products/61908/45471/USA-F1__04773.1711079939.jpg?c=1"
   }
 ]
