@@ -25,8 +25,8 @@ const Header = () => {
             <h3>Category</h3>
             <a href="#">First Day Covers</a>
             <a href="#">Miniature on FDC</a>
-            <a href="#">PLace Canellation</a>
-            <a href="#">Speacial Cover</a>
+            <a href="#">PLace Cancellation</a>
+            <a href="#">Special Cover</a>
             <a href="#">FDC Commercial Used</a>
           </div>
           <div className="dropdown-category">
