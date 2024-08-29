@@ -5,8 +5,8 @@ const Footer = () => {
     <footer>
       <div className="footer-container">
         <div className="footer-left">
-          <h3>Community Management Platform</h3>
-          <p>Empowering communities through collaboration and engagement.</p>
+          <h3>RetroPhil Platform</h3>
+          <p>largest Philatelic market for stamp collectors</p>
           <ul className="social-icons">
             <li>
               <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
@@ -39,7 +39,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-right">
-          <p>&copy; {new Date().getFullYear()} Community Management Platform. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} RetroPhil Platform. All rights reserved.</p>
         </div>
       </div>
       <div className="team-section">
