@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-image: url("./backPhoto.png");
+  background-image: url("./backPhoto2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,9 +25,8 @@
 
 .text-container {
   flex: 1;
-  margin-left: 20px;
   margin-top: -55px;
-  text-align: right;
+  text-align: left;
 }
 
 .text-container h1 {
@@ -43,7 +42,7 @@
 .search-container {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .search-input {

@@ -33,7 +33,7 @@
   }
   .logo {
     position: absolute;
-    left: 45%;
+    left: 5%;
     top: -5%;
   }
   .logo img {
@@ -57,7 +57,7 @@
 
   .dropdown-menu {
     position: absolute;
-    top: 110px;
+    top: 134px;
     left: 1%;
     width: 98%;
     background-color: #f9f9f9;

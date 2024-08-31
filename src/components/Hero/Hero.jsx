@@ -4,8 +4,7 @@ import './Hero.css';
 const Hero = () => {
   return (
     <div className="hero-container">
-      <div className="image-container">
-      </div>
+      
       <div className="paddings text-container">
         <h1>RetroPhil Platform For Beginners And Expert Philatelist</h1>
         <p>
@@ -21,6 +20,8 @@ const Hero = () => {
             <i className="fa fa-search">Search</i>
           </button>
         </div>
+      </div>
+      <div className="image-container">
       </div>
     </div>
   );
