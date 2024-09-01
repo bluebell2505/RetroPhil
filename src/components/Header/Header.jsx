@@ -143,12 +143,6 @@ const Header = () => {
     <header className="header">
       <div className="header-top">
         <div className="contact-info">
-          <a href="tel:1-888-557-2406" className="phone">
-            <i className="fas fa-phone"></i> 1-888-557-2406
-          </a>
-          <a href="/signup" className="signup">
-            <i className="fas fa-envelope"></i> Sign up for the Latest
-          </a>
           <a href="#" className="logo">
             <img src="logo.png" alt="Logo" />
           </a>
@@ -167,7 +161,6 @@ const Header = () => {
 
       <div className="flexCenter header-main">
         <nav className="nav-links">
-          <a href="#recent">RECENT ACQUISITIONS</a>
           <a
             href="#fineart"
             onMouseEnter={() => handleMouseEnter("FDC")}
@@ -194,12 +187,6 @@ const Header = () => {
           </a>
           <a href="#about">ABOUT US</a>
         </nav>
-        <div className="search">
-          <input type="text" placeholder="Search" />
-          <button>
-            <i className="fas fa-search"></i>
-          </button>
-        </div>
       </div>
 
       {activeDropdown && (

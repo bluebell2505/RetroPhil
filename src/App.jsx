@@ -1,7 +1,7 @@
 import Cards from "./components/Card/Cards";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Companies from "./components/Companies/Companies";
-import Footer from "./components/Footer/Footer";
+import Footer2 from "./components/Footer2/Footer2";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Signup from './pages/Signup/Signup'; 
@@ -23,7 +23,7 @@ function App() {
     
     <Cards />
     <Companies />
-    <Footer />
+    <Footer2 />
     </div>
     
     
