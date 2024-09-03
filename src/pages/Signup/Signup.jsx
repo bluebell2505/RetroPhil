@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { auth, db } from "../firebase.js";
 import { setDoc, doc } from "firebase/firestore";
 import './Signup.css';
+import { Link } from "react-router-dom";
 
 function Register() {
   const [email, setEmail] = useState("");
@@ -84,10 +85,11 @@ function Register() {
           </button>
         </div>
         <p className="forgot-password text-right">
-          Already registered <a href="/login">Login</a>
+          Already registered? <Link to="/login">Login</Link>
         </p>
       </form>
     </div>
   );
 }
+
 export default Register;
