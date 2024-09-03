@@ -1,29 +1,59 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { db } from '../firebase.js'; // Import Firestore
+import { collection, getDocs } from 'firebase/firestore';
+import { getDownloadURL, ref } from 'firebase/storage';
+import { imgDB } from '../firebase.js'; // Import Firebase Storage if you need to fetch images from storage
 
 const ProductPage = () => {
+  const [product, setProduct] = useState(null);
+  const [imageUrl, setImageUrl] = useState('');
+
+  useEffect(() => {
+    // Fetch product data from Firestore
+    const fetchProductData = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, 'products'));
+        const productData = querySnapshot.docs[0].data(); // Assuming you have one product
+        setProduct(productData);
+
+        // Fetch image URL from Firebase Storage if it's stored as a path
+        if (productData.img) {
+          const imageRef = ref(imgDB, productData.img); // Assuming `img` is the image path
+          const url = await getDownloadURL(imageRef);
+          setImageUrl(url);
+        }
+      } catch (error) {
+        console.error('Error fetching product data:', error);
+      }
+    };
+
+    fetchProductData();
+  }, []);
+
+  if (!product) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center">
       <div className="bg-white shadow-lg rounded-lg max-w-5xl w-full flex flex-col md:flex-row">
         {/* Image Section */}
         <div className="md:w-1/2">
-          <img
-            src="DefinitiveStamp.png" // Replace with your actual image path
-            alt="Product"
-            className="object-cover w-full h-full rounded-t-lg md:rounded-l-lg md:rounded-t-none"
-          />
+          {imageUrl && (
+            <img
+              src={imageUrl}
+              alt="Product"
+              className="object-cover w-full h-full rounded-t-lg md:rounded-l-lg md:rounded-t-none"
+            />
+          )}
         </div>
 
         {/* Details Section */}
         <div className="p-10 md:w-1/2 flex flex-col justify-between">
           <div>
-            <h2 className="text-3xl font-bold mb-4">I.C.S. GWALIOR 1885</h2>
-            <h3 className="text-xl font-semibold mb-4">SG35a Mint QV 2r carmine and yellow-brown variety Small G</h3>
-            <p className="text-gray-600 mb-6">
-              1885-97 2r carmine and yellow-brown, variety small 'G', brilliant o.g. From R3/1 of a left pane, May 1901 printing.
-              Only 101 possible, but most were used and lost. Rare in this exceptional condition. Ex Domingo (SGA 28 Jan 2020, lot 150).
-            </p>
-            <p className="text-2xl font-bold mb-6">£700.00</p>
-            <p className="text-sm text-gray-500 mb-6">Shipping to the UK: Free</p>
+            <h2 className="text-3xl font-bold mb-4">{product.title}</h2>
+            <p className="text-gray-600 mb-6">{product.description}</p>
+            <p className="text-2xl font-bold mb-6">₹{product.price}</p>
           </div>
 
           {/* Buttons */}

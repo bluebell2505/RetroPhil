@@ -5,7 +5,8 @@ import Hero from "./components/Hero/Hero";
 import Cards from "./components/Card/Cards";
 import Companies from "./components/Companies/Companies";
 import Signup from './pages/Signup/Signup'; 
-import ProductPage from './pages/OnStampClick/click'; 
+import Upload from './pages/upload';
+import ProductPage from './pages/OnStampClick/click'; // Import your ProductPage component
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-        <Route path="/signup" element={<Signup />} />
-          <Route path="/product" element={<ProductPage />} />
-
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/upload" element={<Upload />} />
+          <Route path="/product" element={<ProductPage />} />  {/* Add the ProductPage route */}
           {/* Add other routes here */}
           <Route path="/" element={
             <>
