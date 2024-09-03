@@ -124,13 +124,7 @@
     border-radius: 20px;
   }
   
-  .search button {
-    background-color: transparent;
-    border: none;
-    margin-left: -30px;
-    cursor: pointer;
-    color: #c69d5a;
-  }
+
   
   .search button:hover {
     color: #000;

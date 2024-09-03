@@ -13,8 +13,8 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/onClick" element={<ProductPage />} />
+        <Route path="/signup" element={<Signup />} />
+          <Route path="/product" element={<ProductPage />} />
 
           {/* Add other routes here */}
           <Route path="/" element={

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -150,9 +151,9 @@ const Header = () => {
 
         <div className="account-options">
           <a href="#wishlist">Create Wishlist</a>
-          <button className="button" href="/signup">
-            Sign in 
-          </button>
+          <Link to="/signup" className="button sign-up-button">
+            Sign Up
+          </Link>
           <a href="#shoppingbag" className="shopping-bag">
             Shopping Bag <i className="fas fa-shopping-bag"></i>
           </a>
