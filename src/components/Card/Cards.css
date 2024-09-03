@@ -68,3 +68,10 @@
 .r-button button:hover {
     
 }
+
+.product-button{
+    background-color: rgba(232, 228, 228, 0.351);
+    padding: 1% 3%;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
